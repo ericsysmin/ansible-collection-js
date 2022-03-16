@@ -22,6 +22,5 @@
       retries: 10
       delay: 2
   roles:
-    - role: geerlingguy.nodejs
-      nodejs_install_npm_user: root
+    - role: ericsysmin.js.nodejs
     - role: ericsysmin.js.yarn
