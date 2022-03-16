@@ -11,8 +11,8 @@ on:
       - 'molecule/yarn/**'
       - '.github/workflows/yarn.yml'
 jobs:
-  postgresql:
-    runs-on: ubuntu-18.04
+  yarn:
+    runs-on: ubuntu-20.04
     env:
       PY_COLORS: 1
       ANSIBLE_FORCE_COLOR: 1
