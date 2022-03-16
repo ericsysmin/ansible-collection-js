@@ -1,15 +1,15 @@
-name: "ericsysmin.js.nodejs"
+name: "ericsysmin.js.yarn"
 on:
   push:
     paths:
-      - 'roles/nodejs/**'
-      - 'molecule/nodejs/**'
-      - '.github/workflows/nodejs.yml'
+      - 'roles/yarn/**'
+      - 'molecule/yarn/**'
+      - '.github/workflows/yarn.yml'
   pull_request:
     paths:
-      - 'roles/nodejs/**'
-      - 'molecule/nodejs/**'
-      - '.github/workflows/nodejs.yml'
+      - 'roles/yarn/**'
+      - 'molecule/yarn/**'
+      - '.github/workflows/yarn.yml'
 jobs:
   postgresql:
     runs-on: ubuntu-18.04
@@ -25,7 +25,7 @@ jobs:
           - { "distro":"debian-9", "command":"/lib/systemd/systemd" }
           - { "distro":"debian-10", "command":"/lib/systemd/systemd" }
         collection_role:
-          - nodejs
+          - yarn
     steps:
       - name: Check out code
         uses: actions/checkout@v1
