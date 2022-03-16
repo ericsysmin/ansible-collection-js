@@ -2,9 +2,9 @@
 galaxy_info:
   author: ericsysmin
   role_name: yarn
-  description: This role enables users to install yarn on their hosts.
-  license: BSD
-  min_ansible_version: 2.4
+  description: This role installs yarn on hosts.
+  license: MIT
+  min_ansible_version: 2.9
   platforms:
     - name: EL
       versions:

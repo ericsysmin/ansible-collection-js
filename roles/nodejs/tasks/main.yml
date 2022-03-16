@@ -1,0 +1,5 @@
+---
+# tasks file for nodejs
+
+- name: NodeJS | Install OS specific
+  ansibe.builtin.include_tasks: "{{ ansible_os_family|lower }}.yml"
