@@ -11,7 +11,7 @@ on:
       - 'molecule/**'
       - '.github/workflows/lint.yml'
 jobs:
-  nodejs:
+  lint:
     runs-on: ubuntu-20.04
     env:
       PY_COLORS: 1
@@ -35,4 +35,4 @@ jobs:
           pip install ansible yamllint ansible-lint==5.4.0
 
       - name: Run role tests
-        run: yamllint && ansible-lint
+        run: yamllint . && ansible-lint
