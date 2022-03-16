@@ -4,7 +4,7 @@ Ansible role to install NodeJS
 
 ## Role Variables
 
-nodejs_version: 10
+nodejs_version: 12
 
 ## Example Playbook
 
@@ -16,7 +16,7 @@ nodejs_version: 10
 
 ## License
 
-BSD
+MIT
 
 ## Author Information
 
