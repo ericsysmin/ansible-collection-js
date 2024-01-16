@@ -1,11 +1,14 @@
 ---
+# code: language=ansible
 # tasks file for ericsysmin.yarn
 
-- name: yarn | Include specific os family tasks
-  include_tasks: "{{ ansible_os_family|lower }}.yml"
+- name: Yarn | Include specific os family tasks
+  ansible.builtin.include_tasks: "{{ ansible_os_family | lower }}.yml"
 
-- name: yarn | Install yarn package manager
-  package: name=yarn state=present
+- name: Yarn | Install yarn package manager
+  ansible.builtin.package:
+    name: yarn
+    state: present
   register: task_result
   until: task_result is success
   retries: 10

@@ -1,4 +1,5 @@
 ---
+# code: language=ansible
 galaxy_info:
   author: ericsysmin
   role_name: yarn
